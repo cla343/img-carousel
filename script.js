@@ -40,6 +40,7 @@ function toggleNext () {
     nextslide[0].addEventListener("click", function() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
+        showCircle(currentSlide);
     });
 }
 
@@ -47,6 +48,7 @@ function togglePrev () {
     prevslide[0].addEventListener("click", function() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
+        showCircle(currentSlide);
     });
 }
 
